@@ -1,0 +1,9 @@
+Crie 4 campos + a chave primaria : 
+
+Jogo(#codJog, regras, qtdpess, preco, lanc)
+
+Carro(#placa, pecas, manutencao?, docum, combust)
+
+Bolo(#codBolo, tamanho, sabor, ingred, caixa?)
+
+Namorado(#CPF, nome, end, contato, tempNamoro)

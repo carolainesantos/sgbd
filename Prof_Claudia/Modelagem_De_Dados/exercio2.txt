@@ -1,0 +1,32 @@
+Exercício Relacionamentos entre as tabela abaixo: 
+
+ Celular N - 1 Modelo 
+ Professor N - N Disciplina
+ Sepultura 1 - N Falecido 
+ Aluno N - N Disciplina
+ Carro N - 1 Fabricante 
+ Filme N - N Diretor 
+ Estado 1 -  N Cidade   
+ Música N  - N Compositor 
+ Imóvel N - N Proprietário 
+ Aluno N - N Curso 
+ Presente N - N Namorado 
+ Nota Fiscal N -  N Produto
+ Marido Oriental 1 - N Esposa Oriental
+
+========================================
+
+Crie campos e chaves primárias para essas tabelas: 
+
+Estado 1    N Cidade
+Estado(#siglaEstado,nomeEstado,qtdpontosturisticos)
+Cidade(#codCidade,Cidade,nrBairros,qtdpopulacao,&sigEstado) Carro N - 1 Fabricante
+
+Carro(#placa,nome,manutencao,pecas,cor,&idFabricante)
+Fabricante(#idFabricante,nome,ender,contato) 
+
+Produto - Tipo de Produto        
+Produto(#idProd,qtd,valor,peso,&cdTProduto)  
+TipoProduto(#cdTProd,nome)        
+
+Regra 1: chave primária do lado 1 deve eatar na tabela de lado N (torna-se a chave estrangeira

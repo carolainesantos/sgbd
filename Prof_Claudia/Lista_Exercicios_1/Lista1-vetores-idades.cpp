@@ -20,17 +20,5 @@ main()
 	//primeiro ler e calcuar a media e depois fazer outro for
 	
 	
-	
-	
-	
-
-
-
-	
-
-
-
-
-	
 }
 

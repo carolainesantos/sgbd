@@ -10,7 +10,7 @@ programa
 		
 		escreva("Ano de Nascimento: ")
 		leia(anoNasc)
-		escreva("Mês de Nascimento: ")
+		escreva("MÃªs de Nascimento: ")
 		leia(mesNasc) 
 		
 		idade = (anoAtual - anoNasc)
@@ -19,7 +19,6 @@ programa
 			idade=idade-1
 		}
 		
-		escreva("Sua idade é: " + idade)
-			
+		escreva("Sua idade Ã©: " + idade)	
 	}
 }

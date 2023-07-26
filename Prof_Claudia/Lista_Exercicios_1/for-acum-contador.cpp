@@ -8,14 +8,14 @@ main()
 {
 	system("chcp 65001");
 	cout<<"\n\n\t **** Média de Notas ****\n ";
-	for (i=0;i<5;i++) //repete 5 vezes
+	for (i=0;i<5;i++) // Repete 5 vezes
 	{
 		cout<<"\n Informe a "<<i+1 <<" ª nota: ";
 		cin>>nota;
-		acum_nota=acum_nota+nota;//acumula as notas
+		acum_nota=acum_nota+nota;// Acumula as notas
 		if (nota < 5)
 		{
-			cont_menor++;//cont_menor=cont_menor+1
+			cont_menor++;// Cont_menor=cont_menor+1
 		}
 	}
 	media = acum_nota / 5;

@@ -1,2 +1,2 @@
 # Senac
-Contém aulas do senac
+Contém trabalhos e atividades do Senac

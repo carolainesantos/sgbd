@@ -51,59 +51,24 @@ main()
 	
 	cout<<"\n Total de Sim: "<<totalSim;
 	
-		if (totalSim == 4){ //1º se não for isso vai pro prox...
+		if (totalSim == 4){ // 1º se não for isso vai pro prox...
 			cout<<"\n Suspeito do Crime";
 		}
-		else //2º se não for isso vai pro prox...
+		else // 2º se não for isso vai pro prox...
 		{
 			if ((totalSim >=5) && (totalSim <=7)) {
 				cout<<"\n Possível Criminoso";
 			} 
-		else //3º se não for isso vai pro próxi...
+		else // 3º se não for isso vai pro próxi...
 			{
 				if (totalSim == 8) {
 					cout<<"\n Assassino";
 				}
 				else{ 
-					cout<<"\n Inocente";//4º se ñ atendeu a nenhum acima ele é Inocente
+					cout<<"\n Inocente";// 4º se ñ atendeu a nenhum acima ele é Inocente
 				}
 			}
 		} 	
 }
-	/*OBS= não da pra usar o (for)
-	pq a pergunrta não é a mesma*/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*else {
-		if() {
-			cout<<"\n Poss�vel Criminoso";
-		}
-		else {
-		if() {
-			cout<<"\n Assassino";
-		}
-		else{
-			cout<<"\n Inocente";
-		}*/

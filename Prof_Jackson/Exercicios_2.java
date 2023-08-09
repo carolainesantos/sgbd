@@ -3,11 +3,11 @@ import java.util.Scanner;
 
 public class Exercicios_2 {
     public static void main(String[] args) {
-        System.out.println("\nExercícios de Java");
+        System.out.println("\nExercícios de Java (Lista-2)");
         Scanner sc = new Scanner(System.in);
         int opcao = 0;
         do {
-            System.out.println("..................." + "\u001B[36m" + "\n");
+            System.out.println("............................" + "\u001B[36m" + "\n");
             System.out.println(" [1] - Exercício 1");
             System.out.println(" [2] - Exercício 2");
             System.out.println(" [3] - Exercício 3");
@@ -29,7 +29,7 @@ public class Exercicios_2 {
 
             switch (opcao) {
                 case 0:
-                    System.out.println("Obrigado!");
+                    System.out.println("Obrigado!<3");
                     break;
                 case 1:
                     System.out.println("\n\tAprovado ou Reprovado ?\n");
@@ -164,25 +164,29 @@ public class Exercicios_2 {
                   }
                   break;
                 case 7:
-                  // System.out.println("\n\t Notas e média");
-                  // int cont = 0;
-                  // double somaNotas = 0;
+                    System.out.println("\n\t Notas e média\n");
 
-                  // while (true) {
-                  // System.out.print("Digite a nota " + (contador + 1) + " (ou uma nota negativa para encerrar): ");
-                  // double nota = scanner.nextDouble();
+                    System.out.println("Digite a 1ª nota: ");
+                    float atividade1 = sc.nextFloat();
+                    if(atividade1 < 0) {
+                      System.exit(0);
+                    }
 
-                  // if (nota < 0) {
-                  // break;
-                  // }
-                  // somaNotas += nota;
-                  // contador++;
-                  // } if (contador == 0) {
-                  //     System.out.println("Nenhuma nota inserida. Programa encerrado.");
-                  //   } else {
-                  //       double media = somaNotas / contador;
-                  //       System.out.println("Média das notas: " + media);
-                  //   }
+                    System.out.println("Digite a 2ª nota: ");
+                    float atividade2 = sc.nextFloat();
+                    if(atividade2 < 0) {
+                      System.exit(0);
+                    }
+
+                    System.out.println("Digite a 3ª nota: ");
+                    float atividade3 = sc.nextFloat();
+                    if(atividade1 < 0) {
+                      System.exit(0);
+                    }
+
+                    float resultMedia = (atividade1+atividade2+atividade3) / 3;
+                    System.out.println("Sua média é : " + resultMedia);
+                    System.out.println("\n");
                   break;
                 case 8:
                     System.out.println("\t\nCalculando Fatorial\n");
@@ -276,7 +280,6 @@ public class Exercicios_2 {
                     System.out.println("Opção inválida!");
                     break;
             }
-
         } while (opcao != 0);
         sc.close();
     }

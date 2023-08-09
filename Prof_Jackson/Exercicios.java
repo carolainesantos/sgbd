@@ -1,8 +1,6 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import javax.print.attribute.IntegerSyntax;
-
 public class Exercicios {
     public static void main(String[] args) {
         System.out.println("\n Exercícios de Java (Lista-1)");

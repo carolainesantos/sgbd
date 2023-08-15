@@ -8,6 +8,7 @@ public class Exercicios_2 {
         int opcao = 0;
         do {
             System.out.println("............................" + "\u001B[36m" + "\n");
+            System.out.println(" [0] - Encerrar <3");
             System.out.println(" [1] - Exercício 1");
             System.out.println(" [2] - Exercício 2");
             System.out.println(" [3] - Exercício 3");
@@ -85,8 +86,9 @@ public class Exercicios_2 {
                   break;
                 case 3:
                     System.out.println("\u001B[35m");
-                    System.out.println("\n\tJogo da Forca '-'");
-                    System.out.println("\n\tDica: Palavra de 7 letras\n");
+                    System.out.println("\n\t\tJogo da Forca '-'");
+                    System.out.println("\n\tDica1: Palavra de 7 letras\n");
+                    System.out.println("\tDica2: Todo mundo gosta de receber :)\n");
 
                     String palavra[] = { "c", "a", "r", "i", "n", "h", "o" };  
                     int forca = 1, vencer = 0, perder = 0, contador = 0;   
@@ -119,10 +121,10 @@ public class Exercicios_2 {
                                 }  
                             }  
                             if (perder == 7) {  
-                                System.out.println("Você perdeu.");  
+                                System.out.println("Lamento, você perdeu. :()");  
                                 System.exit(0);  
                             } else if (vencer == 7) {  
-                                System.out.println("Voce venceu.");  
+                                System.out.println("Voce venceu, a palavra é Carinho!!");  
                                 System.exit(0);  
                             }  
                         } else {  
@@ -159,7 +161,7 @@ public class Exercicios_2 {
 
                   for (int i = 1; i <= 500; i++) {
                     if (i % 7 == 0) {
-                        System.out.println(i + "\n");
+                        System.out.println("\n--> " + i);
                     }
                   }
                   break;

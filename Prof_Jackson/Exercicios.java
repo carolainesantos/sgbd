@@ -116,7 +116,7 @@ public class Exercicios {
                     h = sc.nextFloat();
 
                     velocidade = km / h;
-                    System.out.println("A velocidade é: " + velocidade);
+                    System.out.println("A velocidade média é: " + velocidade);
                     System.out.println("\n");
                     break;
                 case 7:
@@ -159,9 +159,9 @@ public class Exercicios {
                 case 10: 
                     System.out.println("\nConverter (string) para (inteiro)\n");
                     Double d_val = 35.90; 
-                    System.out.println("Value in double: "+ d_val);
+                    System.out.println("Valor em str: "+ d_val);
                     int i_val = d_val.intValue();
-                    System.out.println("Value in int: "+i_val);
+                    System.out.println("Valor em int: "+i_val);
                     
                     break;
                 case 11: 
@@ -182,7 +182,7 @@ public class Exercicios {
                     break;
                 case 12:
                     System.out.println("\nDesafio!!!");
-                    System.out.println("\nVerifica se o número é primo\n");
+                    System.out.println("\nVerificar se o número é primo\n");
                     System.out.println("Digite um número: ");
                     int num = sc.nextInt();
                     boolean verificaPrimo = true;

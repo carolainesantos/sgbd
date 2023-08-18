@@ -46,7 +46,7 @@ void troca(char* p) {
 		 		p[i] = 'u';
 				break;
 			}
-			case 'e':  {
+			case 'e': {
 			 	p[i] = 'o';
 				break;
 			}

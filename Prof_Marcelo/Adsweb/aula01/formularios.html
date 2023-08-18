@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulários</title>
+</head>
+
+<body>
+  <h1 align="center">Formulários</h1>
+  <form action="">
+    <fieldset>
+      <legend>Cadastro de Cliente</legend>
+      <label for="txtNome">Nome:</label><br>
+      <input type="text" id="txtNome" name="txtNome" placeholder="Nome">
+      <br><br>
+      <label for="txtSobrenome">Sobrenome:</label><br>
+      <input type="text" id="txtSobrenome" name="txtSobrenome" placeholder="Sobrenome">
+      <br><br>
+      <label for="txtEmail">Email:</label><br>
+      <input type="email" id="txtEmail" name="txtEmail" placeholder="Email">
+      <br><br>
+      <label for="txtSenha">Senha:</label><br>
+      <input type="password" id="txtSenha" name="txtSenha" placeholder="Senha"><br>
+
+      <br><br>
+      <label for="txtArea">Mensagem:</label>
+      <br>
+      <textarea id="txtArea" cols="30" name="txtArea" rows="5"></textarea>
+      <br><br>
+      <fieldset>
+        <label for="txtFilme">Tipos de Filme:</label>
+
+        <select name="txtFilme" id="txtFilme">
+          <option value="">--Selecione --</option>
+          <option value="Drama">Drama</option>
+          <option value="Romance">Romance</option>
+          <option value="Comedia">Comedia</option>
+          <option value="Aventura">Aventura</option>
+        </select>
+        <br><br>
+        <input type="checkbox"><label for="Autorizacao" name="txtAutorizo">Autorizo a divulgação dos seus dados</label>
+        <br>
+        <h3>Qual vc gostaria de assistir?</h3>
+        <input type="radio" name="preferencia"><label for="HP">Harry Potter</label><br>
+        <input type="radio" name="preferencia"><label for="CN">As Crônicas de Nárnia</label><br>
+        <input type="radio" name="preferencia"><label for="Stars">A culpa é das Estrelas</label>
+        <br><br>
+        <input type="button" value="Enviar">
+        <button>Outro Exemplo</button>
+        <input type="submit" value="Enviar Formulários" name="btEnviar">
+        <input type="reset" value="Limpar Formulários">
+      </fieldset>
+    </fieldset>
+  </form>
+</body>
+
+</html>

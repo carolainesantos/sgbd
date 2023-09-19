@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materias</title>
+  <style>
+    .lista-labels {
+      margin-left: 20px;
+      margin-top: 20px;
+      margin-bottom: 0px;
+    }
+  </style>
+
+  <style>
+    table {
+      border: 1px;
+    }
+
+    th,
+    td {
+      border: 2px solid black;
+      padding: 3px;
+    }
+
+    th {
+      background-color: antiquewhite;
+    }
+  </style>
+</head>
+
+<body>
+  <fieldset form action="" method="post">
+    <h3>Cadastro de novos materias de aula</h3>
+    <fieldset>
+      <legend>Lista de Materias ja cadastrados</legend>
+      <div class="lista-labels">
+        <label for="">1. Lápis</label>
+        <br>
+        <label for="">2. Caneta</label>
+        <br>
+        <label for="">3. Papel</label>
+        <br>
+        <label for="">4. Tesoura</label>
+      </div>
+      <br><br>
+    </fieldset>
+    <br>
+    <fieldset form action="" method="post">
+      <legend>Cadastrar novo material</legend>
+      <form>
+        <input type="text" id="palavra" name="palavra" value="Nome"><br>
+        <input type="text" id="palavra" name="palavra" value="Preço"><br>
+        <label for="palavra">Quantidade:</label> <input type="number" id="quantidade" name="quantidade" min="1" max="100" step="1"><br>
+        <label>
+          Devolução: <input type="radio" name="escolha" value="opcao1"> Sim
+        </label>
+        <input type="radio" name="escolha" value="opcao2"> Não<br>
+        <input type="reset" value="Limpar">
+        <input type="submit" value="Cadastrar">
+      </form>
+    </fieldset>
+    <br>
+    <fieldset form action="" method="post">
+      <legend>Dados do último material cadastrado</legend>
+      <table>
+        <tr>
+          <th>Nome</th>
+          <td>Lápis</td>
+        </tr>
+        <tr>
+          <th>Preço</th>
+          <td>R$ 12,30</td>
+        </tr>
+        <tr>
+          <th>Quantidade</th>
+          <td>200</td>
+        </tr>
+        <tr>
+          <th>Devolução:</th>
+          <td>Sim</td>
+        </tr>
+      </table>
+</body>
+
+</html>

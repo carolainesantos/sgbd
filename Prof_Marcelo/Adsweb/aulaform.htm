@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo 01 - Formulario</title>
+</head>
+
+<body>
+  <form action="" method="post">
+    <h1>HTML Formulários</h1>
+    <fieldset style="width: 50px;">
+      <legend>Cadastro</legend>
+      <label for="">Primeiro Nome:</label>
+      <input type="text" id="nome" name="nome">
+      <br><br>
+      <label for="sobrenome">Segundo Nome:</label>
+      <input type="text" id="sobrenome" name="sobrenome">
+      <br><br>
+      <input type="submit" value="Enviar">
+    </fieldset>
+  </form>
+  <br>
+  <h3>Pesquisa de Satisfação</h3>
+  <form action="">
+    <fieldset style="width: 350px;">
+      <h3>O que você achou do site?</h3>
+
+      <input type="radio" name="site" value="Muito bom">Muito Bom
+      <input type="radio" name="site" value="bom">Bom
+      <input type="radio" name="site" value="regular">Regular
+      <input type="radio" name="site" value="umlixo">Um Lixo
+
+      <h3>Qual a seção que você mais gostou?</h3>
+      <select name="gostou" id="gostou">
+        <option value="emcartaz">Em cartaz</option>
+        <option value="terror">Terror</option>
+        <option value="acao">Ação</option>
+        <option value="comedia">Comédia</option>
+      </select>
+      <label for="outra">Outra*:</label>
+      <input type="text" name="outra" id="outra" required>
+
+      <h3>Diga-nos como entrar em contato com você:</h3>
+      <pre>
+ Nome: <input type="text"></pre>
+      <pre>Email: <input type="text"></pre>
+      <pre>Fone:  <input type="text"></pre>
+      <input type="checkbox"><strong>Quero receber as novidades do site pro e-mail</strong>
+      <br><br>
+      <input type="submit" value="Enviar Dados">
+      <input type="reset" value="Limpar Formulário">
+</body>
+
+</html>

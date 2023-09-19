@@ -43,13 +43,13 @@ public class Exercicios_2 {
 
                     int mediaa = (notaUm + notaDois + notaTres) / 3;
 
-                      if(mediaa > 7 ) {
+                      if(mediaa >= 7 ) {
                         System.out.println("Aprovado!!");
-                      } /*else if(media <=7) {
+                      } else if(mediaa == 6) {
                         System.out.println("Recuperação");
-                      } else if(media <= 6) {
+                      } else if(mediaa < 6) {
                           System.out.println("Reprovado");
-                      }*/
+                      }
 
                     System.out.println("A média é: " + mediaa);
                     break;

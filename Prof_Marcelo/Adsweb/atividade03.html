@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Formulário</title>
+  <link rel="stylesheet" href="estilo2.css">
+</head>
+
+<body>
+  <h4> SISTEMA DE GESTÃO ACADÊMICA</h4>
+  <h3> MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h3>
+  <form>
+    <p>
+      <strong>Login</strong> <input type="text">
+    </p>
+    <p>
+      <strong>Senha</strong> <input type="password">
+    </p>
+    <p>
+      <strong>Status</strong> <select name="umaopçao" id="opçoes">
+        <option value="Inativo">Inativo</option>
+        <option value="Ativo">Ativo</option>
+        <option value="Em espera">Em espera</option>
+      </select>
+    </p>
+    <p>
+      <strong>Tipo</strong> <input type="radio" name="escolha" value="opcao2"><strong>Técnico</strong>
+      <input type="radio" name="escolha" value="opcao2"><strong>Professor</strong>
+      <input type="radio" name="escolha" value="opcao2"><strong>Aluno</strong>
+    </p>
+    <p>
+      <strong>Data Criação</strong> <input type="text">
+    </p>
+    <p>
+      <strong>Perfil</strong> <input type="radio" name="escolha" value="opcao2"><strong>Convidado</strong>
+      <input type="radio" name="escolha" value="opcao2"><strong>Administrador</strong>
+    </p>
+    <div class="observation-container">
+      <p class="observation-title">Observações</p>
+      <textarea class="observation-box" placeholder="Digite suas observações aqui..."></textarea>
+    </div>
+    <div class="module-container">
+      <p class="module-title">Módulos</p><br><br>
+      <label class="checkbox-label">
+        <input type="checkbox" name="option" value="Opção 1"><strong>Compras</strong>
+        <label class="checkbox-label">
+          <input type="checkbox" name="option" value="Opção 2"><strong>Biblioteca</strong>
+          <label class="checkbox-label">
+            <input type="checkbox" name="option" value="Opção 3"><strong>Acadêmico</strong>
+          </label>
+    </div>
+    <label class="checkbox-label" style="margin-left: 71px;">
+      <input type="checkbox" name="option" value="Opção 4"><strong>Documento</strong>
+      <label class="checkbox-label">
+        <input type="checkbox" name="option" value="Opção 5"><strong>Recursos Humanos<strong>
+      </label>
+    </label>
+  </form>
+  <br>
+  <input type="submit" value="Cadastrar">
+  <input type="reset" value="Excluir">
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+h4 {
+  background-color: rgba(190, 125, 5, 0.846);
+  width: 500px;
+}
+
+.observation-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.observation-title {
+  font-weight: bold;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.observation-box {
+  width: 300px;
+  height: 100px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+}
+
+.module-container {
+  display: flex;
+  align-items: center;
+}
+
+.module-title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.input-container {
+  margin-right: 20px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="checkbox"] {
+  margin-right: 30px;
+}
+
+.input-container input[type="text"],
+.input-container input[type="password"],
+.input-container select {
+  margin-right: 100px;
+}
+
+.input-container input[type="radio"] {
+  margin-right: 5px;
+}

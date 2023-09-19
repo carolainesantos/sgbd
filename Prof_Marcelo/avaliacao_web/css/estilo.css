@@ -1,0 +1,258 @@
+body {
+  display: grid;
+  margin: auto 0;
+  background-color: #111;
+  color: #fff;
+  grid-template-rows: auto 1fr auto; /* Cabeçalho, conteúdo principal, rodapé */
+  min-height: 100vh;
+}
+
+.conteudo {
+  display: grid;
+  color: #fff;
+  align-items: center;
+  justify-items: center;
+  padding: 50px;
+  text-align: center;
+}
+
+.conteudo .saudacao {
+  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Playfair Display", serif;
+  font-size: x-large;
+  text-align: center;
+}
+
+.conteudo .subtitle {
+  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Playfair Display", serif;
+  font-size: x-large;
+  text-align: center;
+  font-size: 33px;
+  margin-top: 20px;
+  margin: 50px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.conteudo .historia {
+  text-align: justify;
+  font-size: 23px;
+  margin-top: 50px;
+}
+
+img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+#link {
+  text-decoration: none;
+  color: goldenrod;
+}
+
+.titulo {
+  color: #fff;
+  border: 0px;
+  text-align: center;
+  padding: 30px;
+  margin-bottom: 0px;
+}
+
+.titulo3 {
+  color: #fff;
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #fff;
+  font-size: 30px;
+  background-color: #8b008b;
+  padding: 10px;
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+}
+
+.navigation {
+  font-size: 17px;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: center;
+  background-color: #8b008b;
+  padding: 5px; /* Espaçamento interno */
+}
+
+.navigation a {
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin-top: 2px;
+}
+
+.navigation a:active {
+  color: #fff;
+}
+.navigation .active {
+  color: #d1d1d1;
+}
+.navigation a:hover {
+  color: #d1d1d1;
+}
+
+.container {
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  display: grid;
+}
+
+table {
+  width: 100%;
+}
+
+table,
+td {
+  border-radius: 15px;
+}
+
+table .brd_esq {
+  border-radius: 15px 0px 0 0;
+}
+
+table .brd_dir {
+  border-radius: 0px 15px 0 0;
+}
+
+table,
+th,
+td {
+  background-color: #909090;
+  color: #fff;
+  border-collapse: collapse;
+  padding: 10px 20px;
+  font-size: x-large;
+  text-align: center;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+th {
+  background-color: #8b008b;
+  color: beige;
+}
+
+.grid-hist {
+  margin-top: 50px;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  display: grid;
+  gap: 50px;
+}
+
+.grid-hist-all h3 {
+  background-color: #905f9031;
+  margin: 0;
+  padding: 10px;
+}
+
+.grid-hist-all {
+  width: 480px;
+  background-color: #909090;
+  border-radius: 30px;
+}
+
+.latest {
+  grid-column: span 2;
+}
+
+.card {
+  font-size: 21px;
+}
+
+.grid-sobre {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  gap: 30px;
+}
+
+.grid-sobre h2 {
+  background-color: #8b008b;
+  border-radius: 20px 20px 0 0;
+  margin: 0;
+  padding: 10px;
+}
+
+.grid-sobre-all {
+  width: 370px;
+  background-color: #909090;
+  border-radius: 30px;
+}
+
+.grid-sobre-all li {
+  margin-top: 15px;
+  font-size: x-large;
+}
+
+.folder {
+  margin: 0 15% 5% 15%;
+  border-radius: 8px;
+}
+
+footer {
+  bottom: 0;
+  text-align: center;
+  background-color: #151515;
+  padding: 5px;
+}
+
+footer i {
+  color: blue;
+}
+
+.social {
+  text-decoration: none;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.social img {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+}
+
+.social-top img {
+  height: 55px;
+  width: 55px;
+}
+
+.title {
+  font-size: 35px;
+  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Playball", cursive;
+  font-family: "Playfair Display", serif;
+  font-family: "Sansita Swashed", cursive;
+}
+
+.title1 {
+  font-size: 50px;
+  font-family: "Lobster", cursive;
+  font-family: "Lobster Two", cursive;
+  font-family: "Playball", cursive;
+  font-family: "Playfair Display", serif;
+  font-family: "Sansita Swashed", cursive;
+}

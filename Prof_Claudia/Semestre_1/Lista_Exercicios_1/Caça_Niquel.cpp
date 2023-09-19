@@ -12,9 +12,9 @@ using namespace std;
 		int idade;
 		int numCartao;
 		int compra = 0; // Armazena os creditos de todas as compras
-		int creditos;// Armazena os creditos do jogador
+		int creditos; // Armazena os creditos do jogador
 		int saldoFinal;
-		int jogadas;// Armazena quantas jogas ele realizou 
+		int jogadas; // Armazena quantas jogas ele realizou 
 	};
 		
 dados_jogador Jogador;
@@ -54,7 +54,7 @@ int main() {
 	                           
 	cout<<"\n\t\t \e[32;7m ⚡ Cadastro de Jogador(a) ⚡ \033[0m\n\n";
 	
-	cout<<"\n \e[32;1mQual o seu nome: ";
+	cout<<"\n \e[32;1m Qual o seu nome: ";
 	fflush(stdin);
     gets(Jogador.nome);
     cout<<" \n Qual a sua idade: ";
@@ -143,7 +143,7 @@ int main() {
 			}
     	}
 		
-	} while(Jogador.creditos > 10 && escolha == 'J');//Quando os créditos chegarem em 10 ou menos ou se digitar x pra sair
+	} while(Jogador.creditos > 10 && escolha == 'J'); // Quando os créditos chegarem em 10 ou menos ou se digitar x pra sair
   
 	system("cls");
 	

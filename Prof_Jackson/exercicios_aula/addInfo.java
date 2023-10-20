@@ -1,7 +1,5 @@
 import java.util.ArrayList;
 import java.util.Scanner;
-import java.text.ParseException;
-
 
 public class addInfo {
   public static void main(String[] args) {
@@ -20,18 +18,20 @@ public class addInfo {
             double altura = sc.nextDouble();
 
             System.out.println("Digite a data do seu Nascimento (dia/mes/ano): ");
-            String dataNascString = sc.next();
+            String dataNasc = sc.next();
             
+            // New é o construtor q instancia (cria) um objeto
             Pessoa objetoPessoa = new Pessoa(nome, peso, altura, dataNasc);
 
             pessoas.add(objetoPessoa);
-            System.out.println("Digite 0 para sair.....");
+            System.out.println("Digite 0 para calcular seu IMC...");
+            System.out.println("Digite 1 para adicionar uma nova pessoa...");
             opcao = sc.nextInt();
       } while (opcao != 0);
 
       for (Pessoa pessoa : pessoas) {
-          System.out.println(pessoa.nome() + "-" + pessoa.altura() + "-" + pessoa.peso() + "-" + dateFormat.format(pessoa.dataNasc()));
-    }
-        sc.close();
+          System.out.println(pessoa.calculaIMC() + " - " + pessoa.nome + "-" + pessoa.altura + "-" + pessoa.peso + "-" + pessoa.dataNasc);
+      }
+      sc.close();
   }
 }

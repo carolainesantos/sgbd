@@ -1,9 +1,10 @@
-public class Pessoa { // Objeto
+public class Pessoa { 
     public String nome;
     public double peso;
     public double altura;
     public String dataNasc;
 
+    // Método construtor 
     public Pessoa(String nome, double peso, double altura, String dataNasc) {
       this.nome = nome; // This representa o objeto 
       this.peso = peso;
@@ -11,12 +12,16 @@ public class Pessoa { // Objeto
       this.dataNasc = dataNasc;
     }
     
-    public double calculaIMC () {
+    /**
+     * este método ira calcular imc
+     * @return ele ira retornar um double do imc da pessoa
+     */
+    public double calculaIMC() {
       return this.peso / (this.altura * this.altura);
     }
 
     public String imcTexto() {
-      double imc = this.imc();
+      double imc = this.calculaIMC();
     
 
       if (imc <= 18.5) {

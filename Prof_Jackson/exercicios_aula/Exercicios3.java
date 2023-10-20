@@ -9,21 +9,21 @@ public class Exercicios3 {
         Scanner sc = new Scanner(System.in);
         int opcao = 0;
         do {
-        System.out.println("\n" + "\u001B[34m");
-        System.out.println("+-------------------------------------------------------+");
-        System.out.println("| 1 - Tabuada com Arquivo                               |");
-        System.out.println("| 2 - Ler e imprimir arquivo de texto                   |");
-        System.out.println("| 3 - Operações básicas com a Main                      |");
-        System.out.println("| 4 - Exponenciação com Precisão Arbitrária             |");
-        System.out.println("| 5 - Nome aleatório de 5 pessoas                       |");
-        System.out.println("| 6 - Calcular Raio e Área                              |");
-        System.out.println("| 7 - Avaliar se TXT tem JAVA                           |");
-        System.out.println("| 8 - 10 primeiros dígitos                              |");
-        System.out.println("| 9 - Área com a Main                                   |");
-        System.out.println("| 10 - Receba nome de arquivo na Main com valores       |");
-        System.out.println("| 11 - Ler e imprimir arquivo de texto                  |");
-        System.out.println("+-------------------------------------------------------+");
-        System.out.println("Escolha uma opção: \n" + "\u001B[00m");
+          System.out.println("\n" + "\u001B[34m");
+          System.out.println("+-----------------------------------------------------+");
+          System.out.println("| 1 - Tabuada com Arquivo                             |");
+          System.out.println("| 2 - Ler e imprimir arquivo de texto                 |");
+          System.out.println("| 3 - Operações básicas com a Main                    |");
+          System.out.println("| 4 - Exponenciação com Precisão Arbitrária           |");
+          System.out.println("| 5 - Nome aleatório de 5 pessoas                     |");
+          System.out.println("| 6 - Calcular Raio e Área                            |");
+          System.out.println("| 7 - Avaliar se TXT tem JAVA                         |");
+          System.out.println("| 8 - 10 primeiros dígitos                            |");
+          System.out.println("| 9 - Área com a Main                                 |");
+          System.out.println("| 10 - Receba nome de arquivo na Main com valores     |");
+          System.out.println("| 11 - Ler e imprimir arquivo de texto                |");
+          System.out.println("+-----------------------------------------------------+");
+          System.out.println("Escolha uma opção: \n" + "\u001B[00m");
 
         try {
             opcao = sc.nextInt();

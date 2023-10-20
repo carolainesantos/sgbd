@@ -1,3 +1,4 @@
+package atividade_avaliativa;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;

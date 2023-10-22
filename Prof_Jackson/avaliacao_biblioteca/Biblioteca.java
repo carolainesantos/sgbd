@@ -10,7 +10,7 @@ import java.util.ArrayList;
 
 public class Biblioteca {
   private String nome;
-  private ArrayList<Livro> livros;
+  public ArrayList<Livro> livros;
   
   // Criar lista bibliotecas
   public static ArrayList<Biblioteca> bibliotecas = new ArrayList<>();

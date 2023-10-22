@@ -9,8 +9,8 @@ package avaliacao_biblioteca;
 import java.util.ArrayList;
 
 public class Autor {
-  public String nome;
-  public static ArrayList<Autor> autores = new ArrayList<>();
+  private String nome;
+  private static ArrayList<Autor> autores = new ArrayList<>();
 
   // Consrtutor
   public Autor(String nome) {
@@ -18,9 +18,24 @@ public class Autor {
     autores.add(this);
   }
 
+  // Criar método set 
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public void setAutores(Autor autor) {
+    autores.add(autor);
+  }
+
+  // Criar método get 
+  public String getNome() {
+    return this.nome;
+  }
+  public static ArrayList<Autor> getAutores() {
+    return autores;
+  }
+
   // Método toString
   public String toString() {
     return "Nome Completo: " + nome; 
   }
-
 }

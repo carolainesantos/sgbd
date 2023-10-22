@@ -12,9 +12,8 @@ import java.util.ArrayList;
 public class Livro extends Midia {
   private String titulo;
   private Autor autor;
-  public boolean disponivel;
-  
-  public static ArrayList<Livro> livros = new ArrayList<>();
+  private boolean disponivel;
+  private static ArrayList<Livro> livros = new ArrayList<>();
 
   // Construtor
   public Livro(String titulo, Autor autor, boolean disponivel) {
@@ -24,6 +23,28 @@ public class Livro extends Midia {
     // Adiciona livros 
     livros.add(this);
   }
+    // Criar método Get 
+  public String getTitulo() {
+    return this.titulo;
+  }
+  public Autor getAutor() {
+    return this.autor;
+  }
+  public boolean getDisponivel() {
+    return this.disponivel;
+  }
+
+    // Criar método Set 
+  public void setTitulo(String titulo) {
+    this.titulo = titulo;
+  }
+  public void setAutor(Autor autor) {
+    this.autor = autor;
+  }
+  public void setDisponivel(boolean disponivel) {
+    this.disponivel = disponivel;
+  }
+
 
   // Mostrar Livros 
   public void mostrarLivros() {

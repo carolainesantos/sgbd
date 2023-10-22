@@ -55,7 +55,7 @@ public class Catalogar {
                 temErro = true;
               }
               System.out.println("Autor cadastrado com sucesso!");
-              System.out.println("Número na lista: " + Autor.autores.size());
+              System.out.println("Número na lista: " + Autor.getAutores().size());
             } while(temErro);
             break;
           }
@@ -70,10 +70,10 @@ public class Catalogar {
   
                 System.out.println("Digite o número do autor: ");
                 int numero = sc.nextInt() - 1;
-                if (numero < 0 || numero >= Autor.autores.size()) {
+                if (numero < 0 || numero >= Autor.getAutores().size()) {
                   throw new Exception("Autor inexistente");
                 }
-                Autor autor = Autor.autores.get(numero);
+                Autor autor = Autor.getAutores().get(numero);
 
                 System.out.println("O livro está disponivel? [1] - Sim | [2] - Não");
                 int disponivel = sc.nextInt();

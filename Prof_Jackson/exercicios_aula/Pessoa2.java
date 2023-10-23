@@ -1,11 +1,11 @@
-public class Pessoa { 
+public class Pessoa2 { 
     public String nome;
     public double peso;
     public double altura;
     public String dataNasc;
 
     // Método construtor 
-    public Pessoa(String nome, double peso, double altura, String dataNasc) {
+    public Pessoa2(String nome, double peso, double altura, String dataNasc) {
       this.nome = nome; // This representa o objeto 
       this.peso = peso;
       this.altura = altura;

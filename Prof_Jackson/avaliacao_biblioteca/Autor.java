@@ -8,13 +8,12 @@ package avaliacao_biblioteca;
 
 import java.util.ArrayList;
 
-public class Autor {
-  private String nome;
+public class Autor extends Pessoa {
   private static ArrayList<Autor> autores = new ArrayList<>();
 
   // Consrtutor
-  public Autor(String nome) {
-    this.nome = nome;
+  public Autor(String nome, int idade) {
+    super(nome, idade);
     autores.add(this);
   }
 

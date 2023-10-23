@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class addInfo {
   public static void main(String[] args) {
     Scanner sc = new Scanner(System.in);
-    ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+    ArrayList<Pessoa2> pessoas = new ArrayList<Pessoa2>();
     int opcao = 0;
  
         do {
@@ -21,7 +21,7 @@ public class addInfo {
             String dataNasc = sc.next();
             
             // New é o construtor q instancia (cria) um objeto
-            Pessoa objetoPessoa = new Pessoa(nome, peso, altura, dataNasc);
+            Pessoa2 objetoPessoa = new Pessoa2(nome, peso, altura, dataNasc);
 
             pessoas.add(objetoPessoa);
             System.out.println("Digite 0 para calcular seu IMC...");
@@ -29,7 +29,7 @@ public class addInfo {
             opcao = sc.nextInt();
       } while (opcao != 0);
 
-      for (Pessoa pessoa : pessoas) {
+      for (Pessoa2 pessoa : pessoas) {
           System.out.println(pessoa.calculaIMC() + " - " + pessoa.nome + "-" + pessoa.altura + "-" + pessoa.peso + "-" + pessoa.dataNasc);
       }
       sc.close();

@@ -44,18 +44,22 @@ public class Catalogar {
             do {
               System.out.println("\nDigite o nome do autor: ");
               String nome = sc.next();
+              System.out.println("\nDigite a idade do autor: ");
+              int idade = sc.nextInt();
+
               try {
-                if (nome.length() <= 1) { // Verificar se digitou o nome correto 
+                if (nome.length() <= 1 || idade <= 0) { // Verificar se digitou o nome correto 
                   throw new Exception("O nome do autor não é válido");
                 }
                 temErro = false;
-                new Autor(nome); // Criar um novo autor
+                new Autor(nome, idade); // Criar um novo autor
+
+                System.out.println("Autor cadastrado com sucesso!");
+                System.out.println("Número na lista: " + Autor.getAutores().size());
               } catch (Exception e) {
                 System.out.println("Erro: " + e.getMessage());
                 temErro = true;
               }
-              System.out.println("Autor cadastrado com sucesso!");
-              System.out.println("Número na lista: " + Autor.getAutores().size());
             } while(temErro);
             break;
           }

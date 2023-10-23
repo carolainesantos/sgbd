@@ -10,10 +10,10 @@ import java.util.ArrayList;
 
 public class Biblioteca {
   private String nome;
-  public ArrayList<Livro> livros;
+  private ArrayList<Livro> livros;
   
   // Criar lista bibliotecas
-  public static ArrayList<Biblioteca> bibliotecas = new ArrayList<>();
+  private static ArrayList<Biblioteca> bibliotecas = new ArrayList<>();
 
   // Criar construtor 
   public Biblioteca(String nome) {
@@ -21,6 +21,27 @@ public class Biblioteca {
     this.livros = new ArrayList<>();
 
     bibliotecas.add(this); // adiciona biblioteca
+  }
+  // Criar método get
+  public String getNome() {
+    return this.nome;
+  }
+  public ArrayList<Livro> getLivros(){
+    return this.livros;
+  }
+  public static ArrayList<Biblioteca> getBibliotecas() {
+    return bibliotecas;
+  }
+
+  // Criar método set
+  public void setNome(String nome) {
+    this.nome = nome;
+  }
+  public void setLivros(Livro livro) {
+    this.livros.add(livro);
+  }
+  public void setBibliotecas(Biblioteca biblioteca) {
+    bibliotecas.add(biblioteca);
   }
 
   // Criar metodo toString

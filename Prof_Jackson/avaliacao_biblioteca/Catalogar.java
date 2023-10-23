@@ -84,7 +84,7 @@ public class Catalogar {
 
                 temErro = false;
                 new Livro(titulo, autor, aux); // Criar um novo autor
-                System.out.println("Número na lista: " + Livro.livros.size());
+                System.out.println("Número na lista: " + Livro.getLivros().size());
               } catch (Exception e) {
                 System.out.println("Erro: " + e.getMessage());
                 temErro = true;
@@ -101,7 +101,7 @@ public class Catalogar {
                   throw new Exception("O nome não é válido");
                 }
                 new Biblioteca(nome);
-                System.out.println("Número na lista: " + Biblioteca.bibliotecas.size());
+                System.out.println("Número na lista: " + Biblioteca.getBibliotecas().size());
               } catch (Exception e) {
                 System.out.println("Erro: " + e.getMessage());
               }
@@ -113,17 +113,17 @@ public class Catalogar {
               try {
                 System.out.println("Digite o número da biblioteca: ");
                 int numBiblioteca = sc.nextInt() - 1;
-                if (numBiblioteca < 0 || numBiblioteca >= Biblioteca.bibliotecas.size()) {
+                if (numBiblioteca < 0 || numBiblioteca >= Biblioteca.getBibliotecas().size()) {
                   throw new Exception("Biblioteca inexistente");
                 }
-                Biblioteca biblioteca = Biblioteca.bibliotecas.get(numBiblioteca);
+                Biblioteca biblioteca = Biblioteca.getBibliotecas().get(numBiblioteca);
 
                 System.out.println("Digite o número do livro: ");
                 int numLivro = sc.nextInt() - 1;
-                if (numLivro < 0 || numLivro >= Livro.livros.size()) {
+                if (numLivro < 0 || numLivro >= Livro.getLivros().size()) {
                   throw new Exception("Livro inexistente");
                 }
-                Livro livro = Livro.livros.get(numLivro);
+                Livro livro = Livro.getLivros().get(numLivro);
 
                 biblioteca.adicionarLivro(livro);
               } catch (Exception e) {
@@ -137,17 +137,17 @@ public class Catalogar {
               try {
                 System.out.println("Digite o número da biblioteca: ");
                 int numBiblioteca = sc.nextInt() - 1;
-                if (numBiblioteca < 0 || numBiblioteca >= Biblioteca.bibliotecas.size()) {
+                if (numBiblioteca < 0 || numBiblioteca >= Biblioteca.getBibliotecas().size()) {
                   throw new Exception("Biblioteca inexistente");
                 }
-                Biblioteca biblioteca = Biblioteca.bibliotecas.get(numBiblioteca);
+                Biblioteca biblioteca = Biblioteca.getBibliotecas().get(numBiblioteca);
 
                 System.out.println("Digite o número do livro: ");
                 int numLivro = sc.nextInt() - 1;
-                if (numLivro < 0 || numLivro >= biblioteca.livros.size()) {
+                if (numLivro < 0 || numLivro >= biblioteca.getBibliotecas().size()) {
                   throw new Exception("Livro inexistente");
                 }
-                Livro livro = biblioteca.livros.get(numLivro);
+                Livro livro = biblioteca.getLivros().get(numLivro);
 
                 livro.emprestar();
               } catch (Exception e) {
@@ -161,17 +161,17 @@ public class Catalogar {
               try {
                 System.out.println("Digite o número da biblioteca: ");
                 int numBiblioteca = sc.nextInt() - 1;
-                if (numBiblioteca < 0 || numBiblioteca >= Biblioteca.bibliotecas.size()) {
+                if (numBiblioteca < 0 || numBiblioteca >= Biblioteca.getBibliotecas().size()) {
                   throw new Exception("Biblioteca inexistente");
                 }
-                Biblioteca biblioteca = Biblioteca.bibliotecas.get(numBiblioteca);
+                Biblioteca biblioteca = Biblioteca.getBibliotecas().get(numBiblioteca);
 
                 System.out.println("Digite o número do livro para devolver: ");
                 int numLivro = sc.nextInt() - 1;
-                if (numLivro < 0 || numLivro >= biblioteca.livros.size()) {
+                if (numLivro < 0 || numLivro >= biblioteca.getLivros().size()) {
                   throw new Exception("Livro inexistente");
                 }
-                Livro livro = biblioteca.livros.get(numLivro);
+                Livro livro = biblioteca.getLivros().get(numLivro);
 
                 livro.devolver();
               } catch (Exception e) {

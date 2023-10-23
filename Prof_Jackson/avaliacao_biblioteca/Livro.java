@@ -9,7 +9,7 @@ package avaliacao_biblioteca;
   a classe como uma string. */
 
 import java.util.ArrayList;
-public class Livro extends Midia {
+public class Livro {
   private String titulo;
   private Autor autor;
   private boolean disponivel;
@@ -33,7 +33,9 @@ public class Livro extends Midia {
   public boolean getDisponivel() {
     return this.disponivel;
   }
-
+  public static ArrayList<Livro> getLivros() {
+    return livros;
+  }
     // Criar método Set 
   public void setTitulo(String titulo) {
     this.titulo = titulo;
@@ -44,7 +46,9 @@ public class Livro extends Midia {
   public void setDisponivel(boolean disponivel) {
     this.disponivel = disponivel;
   }
-
+  public static void setLivros(Livro livro) {
+    livros.add(livro);
+  }
 
   // Mostrar Livros 
   public void mostrarLivros() {

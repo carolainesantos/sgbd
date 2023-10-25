@@ -65,16 +65,16 @@ public class Livro {
       throw new Exception("Lamento, livro indisponível!");
     }
     this.disponivel = false;
-    System.out.println("Livro emprestado com sucesso!");
+    System.out.println("\u001B[32m" + "Livro emprestado com sucesso!" + "\u001B[00m");
 }
 
   // Metodo devolver 
   public void devolver() throws Exception {
     if (this.disponivel) {
-      System.out.println("Livro já está disponível para devolução.");
+      System.out.println("Livro já foi devolvido");
     } else {
       this.disponivel = true;
-      System.out.println("Livro devolvido com sucesso!");
+      System.out.println("\u001B[32m" + "Livro devolvido com sucesso!" + "\u001B[00m");
     }
   }
 

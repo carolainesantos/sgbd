@@ -11,7 +11,7 @@ import java.util.ArrayList;
 public class Biblioteca {
   private String nome;
   private ArrayList<Livro> livros;
-  
+  private ArrayList<Filme> filmes = new ArrayList<>();
   // Criar lista bibliotecas
   private static ArrayList<Biblioteca> bibliotecas = new ArrayList<>();
 
@@ -29,6 +29,9 @@ public class Biblioteca {
   public ArrayList<Livro> getLivros(){
     return this.livros;
   }
+  public ArrayList<Filme> getFilmes(){
+    return this.filmes;
+  }
   public static ArrayList<Biblioteca> getBibliotecas() {
     return bibliotecas;
   }
@@ -40,6 +43,9 @@ public class Biblioteca {
   public void setLivros(Livro livro) {
     this.livros.add(livro);
   }
+  public void setFilmes(Filme filme) {
+    filmes.add(filme);
+  }
   public void setBibliotecas(Biblioteca biblioteca) {
     bibliotecas.add(biblioteca);
   }
@@ -47,11 +53,6 @@ public class Biblioteca {
   // Criar metodo toString
   public String toString() {
     return "Nome: " + this.nome;
-  }
-
-  // Adicionar livro
-  public void adicionarLivro(Livro livro) {
-    this.livros.add(livro);
   }
 
   // Mostrar todos os livros

@@ -1,2 +1,2 @@
 # sgbd
-Contém trabalhos e atividades do Senac
+Introdução a banco de dados.

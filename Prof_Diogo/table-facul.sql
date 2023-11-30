@@ -1,4 +1,3 @@
-# Aluna: Carolaine dos Santos
 
 CREATE DATABASE Faculdade;
 use faculdade;
@@ -116,7 +115,7 @@ CREATE TABLE faculdade.avaliacoes (
   FOREIGN KEY (id_aluno) REFERENCES faculdade.aluno(id_aluno)
 );
 
-CREATE TABLE faculdade.curso_prof (
+CREATE TABLE faculdade.curso_prof ( # essa é associativa
   id_prof INT UNSIGNED NOT NULL,
   id_curso INT UNSIGNED NOT NULL,
   PRIMARY KEY (id_prof, id_curso),
